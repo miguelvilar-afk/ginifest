@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="Gini Fest — 09/10/2026. Música, open bar 18+ e som automotivo." />
+  <title>GINI FEST // 09.10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scanline"></div>
+
+  <div id="ageGate" class="age-gate" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+    <div class="age-card glass">
+      <div class="mini-tag">ACESSO RESTRITO</div>
+      <h2 id="ageTitle">Você tem 18 anos ou mais?</h2>
+      <p>O evento possui open bar. O consumo de álcool é permitido apenas para maiores de 18 anos.</p>
+      <div class="age-actions">
+        <button id="confirmAge" class="btn btn-primary">SIM, TENHO 18+</button>
+        <button id="denyAge" class="btn btn-ghost">NÃO</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <a class="logo" href="#top" aria-label="Gini Fest início">
+      <span>GINI</span><b>FEST</b>
+    </a>
+    <div class="nav-links">
+      <a href="#experiencia">Experiência</a>
+      <a href="#api">API</a>
+      <a href="#confirmar">Confirmar</a>
+    </div>
+    <a class="nav-date" href="#confirmar">09.10.26</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> SEXTA • 09 OUT • 21H</div>
+        <h1>
+          A NOITE VAI<br />
+          <span>FAZER BARULHO.</span>
+        </h1>
+        <p class="hero-text">
+          Gini Fest 2026. Música alta, open bar 18+, carro de som e uma estética feita para quem gosta de grave de verdade.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#confirmar" class="btn btn-primary">CONFIRMAR PRESENÇA</a>
+          <a href="#experiencia" class="btn btn-ghost">VER O EVENTO</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>09</strong><span>OUTUBRO</span></div>
+          <div><strong>21H</strong><span>INÍCIO</span></div>
+          <div><strong>18+</strong><span>OPEN BAR</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="speaker-stack">
+          <div class="speaker-card">
+            <div class="speaker speaker-lg"><div class="cone"></div></div>
+            <div class="speaker-row">
+              <div class="speaker speaker-sm"><div class="cone"></div></div>
+              <div class="speaker speaker-sm"><div class="cone"></div></div>
+            </div>
+            <div class="equalizer">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+          <div class="neon-orbit orbit-a"></div>
+          <div class="neon-orbit orbit-b"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-band">
+      <div class="marquee">
+        <span>GINI FEST • SOM AUTOMOTIVO • OPEN BAR 18+ • 09.10.26 •</span>
+        <span>GINI FEST • SOM AUTOMOTIVO • OPEN BAR 18+ • 09.10.26 •</span>
+      </div>
+      <div class="countdown-wrap">
+        <span class="count-label">FALTA</span>
+        <div id="countdown" class="countdown">
+          <div><b id="days">00</b><small>DIAS</small></div>
+          <span>:</span>
+          <div><b id="hours">00</b><small>HORAS</small></div>
+          <span>:</span>
+          <div><b id="minutes">00</b><small>MIN</small></div>
+          <span>:</span>
+          <div><b id="seconds">00</b><small>SEG</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="experience section-pad">
+      <div class="section-heading">
+        <span class="kicker">O QUE VAI TER</span>
+        <h2>UMA FESTA FEITA<br />NO <em>VOLUME MÁXIMO.</em></h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card glow-purple">
+          <span class="feature-number">01</span>
+          <div class="feature-icon">♫</div>
+          <h3>Música a noite toda</h3>
+          <p>Uma sequência de som para não deixar a energia cair.</p>
+        </article>
+
+        <article class="feature-card glow-blue">
+          <span class="feature-number">02</span>
+          <div class="feature-icon">◉</div>
+          <h3>Som automotivo</h3>
+          <p>Carro de som, grave forte e visual inspirado na cultura automotiva.</p>
+        </article>
+
+        <article class="feature-card glow-pink">
+          <span class="feature-number">03</span>
+          <div class="feature-icon">✦</div>
+          <h3>Open bar 18+</h3>
+          <p>Bebidas disponíveis durante o evento para convidados maiores de idade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="api" class="api-section section-pad">
+      <div class="api-left">
+        <span class="kicker">DESTAQUE TÉCNICO</span>
+        <h2>API EM<br /><em>TEMPO REAL.</em></h2>
+        <p>
+          Este site consulta uma API externa pelo JavaScript para buscar a previsão do tempo de Brasília no dia da festa.
+          Isso demonstra consumo de API, tratamento de JSON e atualização dinâmica da interface.
+        </p>
+        <div class="tech-tags">
+          <span>FETCH()</span><span>JSON</span><span>REST API</span><span>JAVASCRIPT</span>
+        </div>
+      </div>
+
+      <div class="api-card glass">
+        <div class="api-card-top">
+          <div>
+            <span class="api-status"><i></i> API CONECTADA</span>
+            <h3>Clima • 09/10</h3>
+          </div>
+          <div class="api-logo">API</div>
+        </div>
+
+        <div id="weatherLoading" class="weather-loading">Buscando previsão...</div>
+        <div id="weatherContent" class="weather-content hidden">
+          <div class="weather-main">
+            <span id="weatherIcon" class="weather-icon">☀</span>
+            <strong id="weatherTemp">--°</strong>
+            <span id="weatherDesc">--</span>
+          </div>
+          <div class="weather-details">
+            <div><span>MÍNIMA</span><b id="weatherMin">--°C</b></div>
+            <div><span>CHUVA</span><b id="weatherRain">--%</b></div>
+            <div><span>FONTE</span><b>OPEN-METEO</b></div>
+          </div>
+        </div>
+        <div id="weatherError" class="weather-error hidden">Não foi possível carregar a API agora.</div>
+
+        <div class="code-strip">
+          <span>GET</span>
+          <code>api.open-meteo.com/v1/forecast</code>
+        </div>
+      </div>
+    </section>
+
+    <section class="rules section-pad">
+      <div class="rules-box">
+        <span class="kicker">ANTES DE IR</span>
+        <div class="rules-grid">
+          <div><b>01</b><p>Evento exclusivo para maiores de 18 anos.</p></div>
+          <div><b>02</b><p>Se beber, não dirija. Combine carona ou transporte por aplicativo.</p></div>
+          <div><b>03</b><p>Respeito entre todos os convidados é obrigatório.</p></div>
+          <div><b>04</b><p>Local e demais instruções serão informados aos convidados.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="confirmar" class="rsvp section-pad">
+      <div class="rsvp-panel">
+        <div>
+          <span class="kicker">LISTA DE CONVIDADOS</span>
+          <h2>VOCÊ VAI<br /><em>COLAR?</em></h2>
+          <p>Confirme seu nome. Nesta versão do GitHub Pages, a confirmação fica salva neste navegador usando LocalStorage.</p>
+        </div>
+        <form id="rsvpForm" class="rsvp-form">
+          <label for="guestName">SEU NOME</label>
+          <input id="guestName" type="text" placeholder="Ex.: Henrique" maxlength="40" required />
+          <label class="check-row">
+            <input id="adultCheck" type="checkbox" required />
+            <span>Confirmo que tenho 18 anos ou mais.</span>
+          </label>
+          <button class="btn btn-primary btn-full" type="submit">ENTRAR NA LISTA</button>
+          <div id="rsvpMessage" class="rsvp-message" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo"><span>GINI</span><b>FEST</b></div>
+    <p>09.10.2026 • Brasília/DF • 18+</p>
+    <p class="footer-tech">HTML • CSS • JAVASCRIPT • API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
